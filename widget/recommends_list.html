@@ -1,0 +1,81 @@
+
+<!--
+var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
+var url = new URL(url_string);
+var c = url.searchParams.get("c");
+console.log(c);
+-->
+
+
+<html>
+
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <style>
+            body { 
+                animation: fadeInAnimation ease 3s; 
+                animation-iteration-count: 1; 
+                animation-fill-mode: forwards; 
+            } 
+            @keyframes fadeInAnimation { 
+                0% { 
+                    opacity: 0; 
+                } 
+                100% { 
+                    opacity: 1; 
+                } 
+            } 
+        </style>
+		
+    </head>
+
+
+
+    <body style="background-color:#f7f7f7;">
+        <div class="container no-subscription">
+		
+		
+<!--
+<input type="button" value="Generate Table" onclick="GenerateTable()" />
+<hr />
+-->
+
+
+            <div class="header" style="margin-top: -15px; margin-bottom: 10px;">
+                <center><!---<img src='https://writepublic-uploads.s3.amazonaws.com/icons/conversationlogoconly721.png' style='vertical-align: middle; width: 55px;padding-right: 4px;border-radius: 30px;'>--->
+                <h2 style="font-weight: 600;font-size: 20px;"><!--<img height=42 width=42 src='https://image.flaticon.com/icons/svg/166/166088.svg' style='vertical-align:middle;padding-right:12px'>-->What Friends You Follow Are Reading on this Site</h2><br>		
+                <!--<h4 style="margin-top: -10px;font-size: 17px;font-style: normal;font-weight: 500;font-family: 'system-ui';margin-bottom: 30px;">Recommended Reading from Your Twitter Friends</h4><b>-->
+            </div>
+			
+            <center><div id="dvTable"></div></center>
+            <center><div id="twScript"></div></center>
+        </div>
+
+
+
+<!--https://stackoverflow.com/a/36878842 -->
+
+    <!--<script src="../widget/js/recommends_list.js"></script>-->
+    <script src="../widget/js/recommends_list.js"></script>
+    <!--<script src="https://platform.twitter.com/widgets.js" charset="utf-8" defer></script>-->
+	<!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+
+    <script>
+        window.twttr = (function (d,s,id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+            js.src="https://platform.twitter.com/widgets.js?v=" + Math.random(); fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+            }(document, "script", "twitter-wjs"));
+    </script>
+	
+<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+
+
+    </body>
+</html>

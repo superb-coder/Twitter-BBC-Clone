@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+        <style>
+            body { 
+                animation: fadeInAnimation ease 3s; 
+                animation-iteration-count: 1; 
+                animation-fill-mode: forwards; 
+            } 
+            @keyframes fadeInAnimation { 
+                0% { 
+                    opacity: 0; 
+                } 
+                100% { 
+                    opacity: 1; 
+                } 
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container no-subscription">
+            <div class="header">
+                <h2>Oops! You're Not Logged In.</h2>
+            </div>
+
+            <div class="image">
+                <!-- todo use link wrap code from other places to make this link work<a href="" @click="twitterLogin" class="fa fa-twitter"></a> -->
+                <a href="https://theconversation.social/login/twitter/?next=/twitter/after_authentication/?next=chrome_extension_livedemo_newsarticles/?from_extension=true" target="_blank">
+                <img src="../sign_in_with_twitter_big.png">
+                </a>
+            </div>
+            <br>
+			<div class="message">
+                We need this in order to gather Social Conversation <br>
+				from Twitter on your behalf.
+            </div>
+            <div class="message">
+                <!--<a href="https://theconversation.social/registration/?extension=true">SUBSCRIBE NOW</a>-->
+            </div>
+        </div>
+    </body>
+</html>

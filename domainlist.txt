@@ -1,0 +1,10 @@
+cnn.com
+nbcnews.com
+cbsnews.com
+foxnews.com
+msnbc.com
+nytimes.com
+washingtonpost.com
+washpost.com
+latimes.com
+usatoday.com

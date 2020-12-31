@@ -1,0 +1,145 @@
+body {
+   height:100%;
+   margin:0px;
+}
+
+div.banner {
+    display: table;
+    width:100%;
+    height:64px;
+    background-color:#009DC4;
+    font-family:arial, sans-serif;
+    color:#fff0fb;
+}
+
+div.banner div.banner-icon-div {
+    display: table-cell;
+    vertical-align: middle;
+    width:64px;
+    height:100%;
+    background-color:#36464C;
+    text-align:center;
+}
+
+div.banner div.banner-icon-div .banner-icon {
+    width:48px;
+    height:48px;
+}
+
+div.banner div.banner-title {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left:10px;
+    font-size:26px;
+}
+
+div.banner div.banner-links {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:right;
+    padding-right:5px;
+    font-size:14px;
+}
+
+div.main-content {
+    display: table;
+    width:100%;
+    height:calc(100% - 64px);
+    font-family:'Helvetica Neue',arial,sans-serif;
+}
+
+div.main-content div.content-left-div {
+    display: table-cell;
+    padding-left: 74px;
+    padding-top: 4%;
+}
+
+div.main-content div.content-right-div {
+    display: table-cell;
+    padding-left: 10px;
+    padding-top: 4%;
+    padding-right: 25px;
+    width: 350px
+}
+
+div.ad-div {
+    border: solid 1px #ddd;
+    padding: 5px;
+}
+
+.separator {
+    margin-top : 15px;
+    margin-bottom : 10px;
+    margin-left : 0px;
+    margin-right : 0px;
+    border-top: solid 1px #ddd;
+}
+
+.ad-content {
+    margin-top: 10px;
+}
+
+.app-icon {
+    float:left;
+    margin-right: 5px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.app-title {
+    font-size: 13px;
+}
+
+input[type=checkbox].css-checkbox {
+    display: none;
+}
+
+input[type=checkbox].css-checkbox + div.css-checkbox-group > label.css-label {
+    padding-left: 28px;
+    height: 18px;
+    display: inline-block;
+    line-height: 19px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size:14.0pt;
+    margin-top: 5px;
+}
+
+input[type=checkbox].css-checkbox:checked + div.css-checkbox-group > label.css-label {
+    background-position: 0 -18px;
+}
+
+.lite-x-gray {
+    background-image: url(checkbox.png);
+}
+
+div.round-div {
+    margin-top: 5px;
+    padding: 10px;
+    width: 450px;
+    border: 1px solid #d9c1d3;
+    border-radius: 15px; /* W3C syntax */
+    background-color: #fbf0ff;
+    font-size: 10.0pt;
+}
+
+input[type=checkbox].css-checkbox + div.css-checkbox-group > div.checked-tip {
+    display: none;
+}
+
+input[type=checkbox].css-checkbox:checked + div.css-checkbox-group > div.checked-tip {
+    display: block;
+}
+
+a.headlink { text-decoration: none; margin: 10px }
+a.headlink:link { color: #fff0fb; }   /* unvisited link */
+a.headlink:visited { color: #fff0fb; }   /* visited link */
+a.headlink:hover { text-decoration: underline; }   /* mouse over link */
+a.headlink:active { background-color: #fff0fb; color: #8e2f78; }   /* selected link */
+
+sup {
+    font-size: 8.0pt;
+    color: #444;
+}
